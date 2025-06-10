@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamiento - Opciones para Adultos Mayores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Alojamiento Senior</h1>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alojamiento.html" class="active">Alojamiento</a></li>
+                <li><a href="que-hacer.html">Qué hacer en Qro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Opciones de Alojamiento</h2>
+            <p>Encuentra el lugar perfecto para nuestros adultos mayores</p>
+        </section>
+
+        <section class="filters">
+            <div class="filter-container">
+                <label for="filter-type">Tipo:</label>
+                <select id="filter-type">
+                    <option value="all">Todos</option>
+                    <option value="residencia">Residencia</option>
+                    <option value="casa">Casa de descanso</option>
+                    <option value="departamento">Departamento adaptado</option>
+                </select>
+            </div>
+            <div class="filter-container">
+                <label for="filter-price">Precio:</label>
+                <select id="filter-price">
+                    <option value="all">Todos</option>
+                    <option value="low">Económico</option>
+                    <option value="medium">Medio</option>
+                    <option value="high">Premium</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="accommodation-list">
+            <div class="card-container" id="accommodation-cards">
+                <!-- Cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h3>Ubicaciones</h3>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Alojamiento Senior</h3>
+                <p>Encontrando el mejor hogar para nuestros adultos mayores</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@alojamientosenior.com</p>
+                <p>Teléfono: (442) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alojamiento Senior. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/accommodation.js"></script>
+</body>
+</html>
