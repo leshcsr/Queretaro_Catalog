@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Alojamiento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Alojamiento Senior</h1>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alojamiento.html" class="active">Alojamiento</a></li>
+                <li><a href="que-hacer.html">Qué hacer en Qro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detail-header">
+            <a href="alojamiento.html" class="back-link">&larr; Volver a alojamientos</a>
+            <h2 id="accommodation-title">Cargando...</h2>
+        </section>
+
+        <section class="detail-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slides" id="carousel-slides">
+                    <!-- Images will be populated by JavaScript -->
+                </div>
+                <button class="carousel-button prev" id="prev-button">&lt;</button>
+                <button class="carousel-button next" id="next-button">&gt;</button>
+                <div class="carousel-indicators" id="carousel-indicators">
+                    <!-- Indicators will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-info">
+            <div class="detail-description" id="accommodation-description">
+                <!-- Description will be populated by JavaScript -->
+            </div>
+
+            <div class="detail-services">
+                <h3>Servicios</h3>
+                <ul class="services-list" id="services-list">
+                    <!-- Services will be populated by JavaScript -->
+                </ul>
+            </div>
+
+            <div class="detail-price">
+                <h3>Precio</h3>
+                <p id="price-info">Cargando...</p>
+            </div>
+        </section>
+
+        <section class="detail-map">
+            <h3>Ubicación</h3>
+            <div id="detail-map"></div>
+            <p id="address">Cargando dirección...</p>
+        </section>
+
+        <section class="detail-contact">
+            <h3>Contacto</h3>
+            <div id="contact-info">
+                <!-- Contact info will be populated by JavaScript -->
+            </div>
+            <div class="contact-form">
+                <h4>Solicitar más información</h4>
+                <form id="info-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar consulta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Alojamiento Senior</h3>
+                <p>Encontrando el mejor hogar para nuestros adultos mayores</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@alojamientosenior.com</p>
+                <p>Teléfono: (442) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Alojamiento Senior. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/detail.js"></script>
+</body>
+</html>
